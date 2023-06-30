@@ -8,10 +8,10 @@ body{
     width: 100%;
 }
 :root{
-    --color-dominant: #1B9C85;
-    --second-color: #4C4C6D;
-    --light-color: #E8F6EF;
-    --third-color: #FFE194; 
+    --color-dominant: #F5F5F5;
+    --second-color: #F2EAD3;
+    --light-color: #DFD7BF;
+    --third-color: #3F2305; 
 }
 nav{
     position: fixed;
@@ -21,8 +21,8 @@ nav{
     display: flex;
     justify-content: end;
     align-items: center;
-    background: var(--second-color);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.253);
+    background: var(--third-color);
+    box-shadow: 0 2px 0 rgba(124, 123, 123, 0.233);
 }
 nav > ul{
     display: flex;
@@ -30,11 +30,6 @@ nav > ul{
 nav li{
     list-style: none;
     padding: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.397);
-    border-right: 1px solid rgba(0, 0, 0, 0.397);
-}
-nav li{
-    border-right: none;
 }
 nav a{
     color: black;
@@ -42,7 +37,7 @@ nav a{
     font-size: 20px;
 }
 nav li:hover{
-    background-color: var(--color-dominant);
+    background-color: var(--light-color);
     cursor: pointer;
 }
 #welcome-section{
@@ -52,12 +47,12 @@ nav li:hover{
     display: flex;
 }
 .name{
-    color: white;
+    color: var(--third-color);
     font-size: 40px;
 }
 #welcome-section img{
     width: 150px;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 .about{
     display: flex;
