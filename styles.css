@@ -26,6 +26,8 @@ nav{
 nav li{
     list-style: none;
     padding: 15px;
+    border-left: 2px solid black;
+    border-right: 1px solid black;
 }
 nav a{
     color: black;
@@ -56,4 +58,7 @@ nav li:hover{
     align-items: center;
     gap: 50px;
     margin: auto;
+}
+.about p{
+    font-size: 25px;
 }
