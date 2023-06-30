@@ -8,21 +8,33 @@ body{
     width: 100%;
 }
 :root{
-    --color-dominant: #4C4C6D;
-    --second-color: #1B9C85;
-    --light-color: #E8F6EF;
-    --third-color: #FFE194; 
+    --color-dominant: #0A2647;
+    --second-color: #144272;
+    --light-color: #205295;
+    --third-color: #2C74B3; 
 }
 nav{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
     display: flex;
     justify-content: end;
     align-items: center;
     background: var(--second-color);
+}
+nav li{
+    list-style: none;
+    padding: 15px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav li:hover{
+    background-color: var(--third-color);
+    cursor: pointer;
 }
 #welcome-section{
     height: 100vh;
@@ -30,13 +42,18 @@ nav{
     background: var(--color-dominant);
     display: flex;
 }
+.name{
+    color: white;
+    font-size: 40px;
+}
 #welcome-section img{
-    width: 200px;
-    border-radius: 50%;
+    width: 150px;
+    border: 2px solid white;
 }
 .about{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+    margin: auto;
 }
