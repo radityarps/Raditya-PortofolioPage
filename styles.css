@@ -71,10 +71,10 @@ nav li:hover{
 }
 #projects h2{
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     max-width: 500px;
     margin: 0 auto 5rem auto;
-    border-bottom: 0.3rem solid black;
+    border-bottom: 0.3rem solid rgb(255, 255, 255);
 }
 .project-grid{    
     display: grid;
@@ -90,16 +90,13 @@ nav li:hover{
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
-.project-grid a img{
-    width: 100%;
-    height: auto;
-}
+
 .project-link{
     text-decoration: none;
     color: white;
 }
 .project-img{
-    height: calc(100% - 6.8rem);
+    height: auto;
     width: 100%;
     object-fit: cover;
 }
