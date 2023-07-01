@@ -8,10 +8,10 @@ body{
     width: 100%;
 }
 :root{
-    --color-dominant: #F5F5F5;
-    --second-color: #F2EAD3;
-    --light-color: #DFD7BF;
-    --third-color: #3F2305; 
+    --color-dominant: #ffffff;
+    --second-color: #b42121;
+    --light-color: #45a72c;
+    --third-color: #292d58; 
 }
 nav{
     position: fixed;
@@ -22,7 +22,7 @@ nav{
     justify-content: end;
     align-items: center;
     background: var(--third-color);
-    box-shadow: 0 2px 0 rgba(124, 123, 123, 0.233);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.411);
 }
 nav > ul{
     display: flex;
@@ -32,7 +32,7 @@ nav li{
     padding: 15px;
 }
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 20px;
 }
