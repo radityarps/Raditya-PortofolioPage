@@ -23,6 +23,7 @@ nav{
     align-items: center;
     background: var(--third-color);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.411);
+    z-index: 10;
 }
 nav > ul{
     display: flex;
@@ -103,4 +104,7 @@ nav li:hover{
     padding: 1rem 0.5rem;
     display: block;
     background: var(--third-color);
+}
+.project-link:hover{
+    transform: scale(1.03);
 }
