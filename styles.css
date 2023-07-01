@@ -83,14 +83,12 @@ nav li:hover{
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 3rem;
 }
 .block{
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
-
 .project-link{
     text-decoration: none;
     color: white;
