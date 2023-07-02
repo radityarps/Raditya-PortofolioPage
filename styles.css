@@ -44,9 +44,10 @@ nav li:hover{
 }
 #welcome-section{
     height: 100vh;
-    display: block;
     background: var(--color-dominant);
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .name{
     color: var(--third-color);
@@ -61,7 +62,7 @@ nav li:hover{
     justify-content: space-between;
     align-items: center;
     gap: 50px;
-    margin: auto;
+    margin: 30px;
 }
 .about p{
     font-size: 25px;
@@ -129,10 +130,9 @@ nav li:hover{
 .sosmed{
     display: flex;
     gap: 40px;
-    margin-top: 90px;
     font-size: 1.5rem;
     flex-wrap: wrap;
-    
+    margin: 90px 0 30px 30px;
 }
 #profile-link:hover{
     transform: translateY(-5px);
@@ -151,4 +151,30 @@ footer{
 }
 .footerlink{
     color: black;
+}
+@media(max-width: 870px){
+    .sosmed{
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 580px) {
+    .about{
+        flex-direction: column;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .contact-msg h2{
+        font-size: 50px;
+    }
+    .contact-msg p{
+        font-size: 24px;
+    }
+    .sosmed{
+        font-size: 15px;
+    }
 }
