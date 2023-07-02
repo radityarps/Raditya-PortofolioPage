@@ -85,7 +85,8 @@ nav li:hover{
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 100px auto;
+    margin: auto;
+    margin-bottom: 100px;
 }
 .block{
     background: var(--main-gray);
