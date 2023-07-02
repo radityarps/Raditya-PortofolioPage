@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -12,6 +13,10 @@ body{
     --second-color: #09be97;
     --light-color: #2f54b9;
     --third-color: #292d58; 
+}
+a{
+    color: white;
+    text-decoration: none;
 }
 nav{
     position: fixed;
@@ -31,10 +36,6 @@ nav > ul{
 nav li{
     list-style: none;
     padding: 15px;
-}
-nav a{
-    color: white;
-    text-decoration: none;
     font-size: 20px;
 }
 nav li:hover{
@@ -71,11 +72,12 @@ nav li:hover{
     padding: 30px 20px;
 }
 #projects h2{
-    font-size: 40px;
-    color: black;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
     max-width: 500px;
     margin: 0 auto 5rem auto;
-    border-bottom: 0.3rem solid black;
+    padding-top: 50px;
+    text-shadow: 2px 2px 1px #363636;
 }
 .project-grid{    
     display: grid;
@@ -83,16 +85,12 @@ nav li:hover{
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 100px auto;
 }
 .block{
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
-}
-.project-link{
-    text-decoration: none;
-    color: white;
 }
 .project-img{
     height: auto;
@@ -107,4 +105,49 @@ nav li:hover{
 }
 .project-link:hover{
     transform: scale(1.03);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+#contact{
+    display: flex;
+    height: 90vh;
+    background: var(--third-color);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.contact-msg h2{
+    font-size: 80px;
+}
+.contact-msg p{
+    font-size: 30px;
+    font-weight: 100;
+}
+.sosmed{
+    display: flex;
+    gap: 40px;
+    margin-top: 90px;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    
+}
+.contact-link:hover{
+    transform: translateY(-5px);
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+footer{
+    height: 10vh;
+    background-color: var(--color-dominant);
+    color: black;
+    border-top: 5px solid var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.footerlink{
+    color: black;
 }
