@@ -9,8 +9,8 @@ body{
 }
 :root{
     --color-dominant: #e6e3e3;
-    --second-color: #b42121;
-    --light-color: #418f2e;
+    --second-color: #09be97;
+    --light-color: #2f54b9;
     --third-color: #292d58; 
 }
 nav{
@@ -38,7 +38,7 @@ nav a{
     font-size: 20px;
 }
 nav li:hover{
-    background-color: var(--light-color);
+    background-color: var(--second-color);
     cursor: pointer;
 }
 #welcome-section{
@@ -67,15 +67,15 @@ nav li:hover{
 }
 #projects{
     text-align: center;
-    background: var(--light-color);
+    background: var(--second-color);
     padding: 30px 20px;
 }
 #projects h2{
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: black;
     max-width: 500px;
     margin: 0 auto 5rem auto;
-    border-bottom: 0.3rem solid rgb(255, 255, 255);
+    border-bottom: 0.3rem solid black;
 }
 .project-grid{    
     display: grid;
