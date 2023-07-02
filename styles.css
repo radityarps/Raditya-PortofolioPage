@@ -97,7 +97,7 @@ nav li:hover{
     width: 100%;
     object-fit: cover;
 }
-.project-name{
+.project-tile{
     font-size: 2rem;
     padding: 1rem 0.5rem;
     display: block;
@@ -133,7 +133,7 @@ nav li:hover{
     flex-wrap: wrap;
     
 }
-.contact-link:hover{
+#profile-link:hover{
     transform: translateY(-5px);
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
