@@ -13,11 +13,12 @@ body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
+
 :root {
   --first-color: #222831;
   --second-color: #393e46;
   --third-color: #00adb5;
-  --backup-color: #0763db;
+  --blue-color: #0763db;
   --fourth-color: #eeeeee;
 }
 
@@ -71,10 +72,11 @@ nav a {
   text-decoration: none;
   font-size: 20px;
   padding-bottom: 5px;
+  font-weight: 400;
 }
 
 .active {
-  color: var(--backup-color);
+  color: var(--blue-color);
   font-weight: 600;
 }
 
@@ -92,10 +94,6 @@ nav a {
 
 .nav-effect:hover::after {
   transform: scaleX(1);
-}
-
-nav ul li a.active {
-  color: #0763db;
 }
 
 .btn {
@@ -130,11 +128,11 @@ nav ul li a.active {
 /*Home Section*/
 section {
   height: 100vh;
-  background: rgb(238, 174, 202);
-  background: linear-gradient(180deg, rgb(48, 47, 47) 0%, rgb(0, 0, 0) 100%);
+  background: black;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #0763db;
   font-size: 40px;
+  padding: 20px 0;
 }
