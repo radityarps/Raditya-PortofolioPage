@@ -15,7 +15,7 @@ body {
 }
 
 section {
-  padding: 0 50px;
+  padding: 0 100px;
 }
 
 :root {
@@ -131,6 +131,7 @@ nav a {
   align-items: center;
   color: #0763db;
   font-size: 40px;
+  padding: 0 10px;
 }
 h1 span {
   color: white;
@@ -197,4 +198,10 @@ h1 span {
     height: 30vh;
     top: 95vh;
   }
+}
+
+/*About Section*/
+#about {
+  height: 200vh;
+  background: var(--second-color);
 }
