@@ -14,12 +14,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+section {
+  padding: 0 50px;
+}
+
 :root {
-  --first-color: #222831;
-  --second-color: #393e46;
-  --third-color: #00adb5;
-  --blue-color: #0763db;
-  --fourth-color: #eeeeee;
+  --first-color: #161616;
+  --second-color: #4c4c4c;
+  --third-color: #919191;
+  --blue-color: #2682fc;
+  --fourth-color: #fafafa;
+  --fifth-color: #c8dfe6;
 }
 
 /*Header & Navbar Section*/
@@ -29,18 +34,16 @@ header {
   align-items: center;
   justify-content: space-between;
   top: 0px;
-  right: 80px;
-  left: 80px;
+  right: 150px;
+  left: 150px;
   transition: 0.6s;
   z-index: 99;
   padding: 0 20px;
 }
-
 header span a {
   color: white;
   text-decoration: none;
 }
-
 header.sticky {
   top: 15px;
   box-shadow: -1px 3px rgba(212, 212, 212, 0.2);
@@ -48,7 +51,6 @@ header.sticky {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
 }
-
 nav {
   display: flex;
   gap: 20px;
@@ -56,7 +58,6 @@ nav {
   align-items: center;
   padding: 10px;
 }
-
 nav ul {
   display: flex;
   list-style: none;
@@ -65,7 +66,6 @@ nav ul {
   gap: 20px;
   cursor: pointer;
 }
-
 nav a {
   position: relative;
   color: white;
@@ -74,24 +74,21 @@ nav a {
   padding-bottom: 5px;
   font-weight: 400;
 }
-
 .active {
   color: var(--blue-color);
   font-weight: 600;
 }
-
 .nav-effect::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #0763db;
+  background-color: var(--blue-color);
   left: 0;
   bottom: 0;
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
 }
-
 .nav-effect:hover::after {
   transform: scaleX(1);
 }
@@ -99,8 +96,8 @@ nav a {
 .btn {
   text-decoration: none;
   padding: 5px;
-  border: 2px solid #0763db;
-  color: #0763db;
+  border: 2px solid var(--blue-color);
+  color: var(--blue-color);
   border-radius: 25px;
   position: relative;
   transition: all 1s;
@@ -113,7 +110,7 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0763db;
+  background-color: var(--blue-color);
   transition: all 1s;
   z-index: -1;
   transform: translateX(-100%);
@@ -126,13 +123,78 @@ nav a {
 }
 
 /*Home Section*/
-section {
+#home {
   height: 100vh;
-  background: black;
+  background: var(--first-color);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: #0763db;
   font-size: 40px;
-  padding: 20px 0;
+}
+h1 span {
+  color: white;
+  font-size: 2.5rem;
+}
+#home p {
+  color: var(--third-color);
+  font-size: 20px;
+}
+.pp {
+  width: 15rem;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+/*wave*/
+.waves {
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: absolute;
+  top: 85vh;
+  width: 100%;
+}
+/*Wave Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+    top: 95vh;
+  }
 }
