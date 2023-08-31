@@ -28,7 +28,7 @@ section {
   --fifth-color: #c8dfe6;
 }
 
-/*Header & Navbar Section*/
+/*HEADER & NAVBAR*/
 header {
   position: fixed;
   display: flex;
@@ -125,7 +125,7 @@ nav ul li a {
   color: #fff;
 }
 
-/*Home Section*/
+/*HOME SECTION*/
 #home {
   height: 100vh;
   background: var(--first-color);
@@ -203,7 +203,7 @@ h1 span {
   }
 }
 
-/*About Section*/
+/*ABOUT SECTION*/
 #about {
   background: var(--third-color);
   padding: 50px;
@@ -261,5 +261,46 @@ h1 span {
   margin: 10px 30px;
   border: 2px solid var(--fifth-color);
   border-radius: 20px;
+  padding: 20px;
+  box-shadow: -8px 10px rgba(212, 212, 212, 0.2);
+}
+.skills h3 {
+  font-size: 3.5rem;
+  opacity: 0.3;
+  margin: 5px 0;
+}
+.hard-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 20px;
+  text-align: left;
+}
+.hard-skills h4 {
+  font-size: 2.5rem;
+  color: var(--blue-color);
+}
+.hard-skills ul li {
+  font-size: 15px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: first baseline;
+  margin: 10px 0;
+  margin-left: 20px;
+}
+.frontend,
+.backend,
+.other {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.soft-skills ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
   padding: 20px;
 }
