@@ -304,3 +304,33 @@ h1 span {
   font-size: 1.5rem;
   padding: 20px;
 }
+.education {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.education h3 {
+  font-size: 3.5rem;
+  opacity: 0.3;
+}
+.school {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.polines,
+.smanten {
+  background: var(--second-color);
+  border-radius: 10px;
+  padding: 10px;
+  width: 28vw;
+  font-size: 20px;
+}
+.polines h6,
+.smanten h6 {
+  font-size: 1.5rem;
+}
+.polines p,
+.smanten p {
+  margin: 5px 0;
+}
