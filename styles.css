@@ -393,7 +393,6 @@ h1 span {
   );
   opacity: unset;
 }
-
 .hero-slider {
   width: 100%;
   height: 100vh;
@@ -475,3 +474,5 @@ h1 span {
 .btn {
   border-radius: 5px;
 }
+
+/*CONTACT SECTION*/
