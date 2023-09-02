@@ -582,18 +582,23 @@ form button {
   text-decoration: none;
 }
 /* Social Media Icons */
-.social-media-list {
+
+a {
+  z-index: 99;
+}
+.sosmed-list {
   position: relative;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   padding: 0;
 }
-.social-media-list li a {
+.sosmed-list li a {
   color: #fff;
+  font-size: 25px;
 }
-.social-media-list li {
+.sosmed-list li {
   position: relative;
   display: inline-block;
   height: 60px;
@@ -605,7 +610,7 @@ form button {
   background-color: rgb(27, 27, 27);
   transition: all 0.2s ease-in-out;
 }
-.social-media-list li:after {
+.sosmed-list li:after {
   content: "";
   position: absolute;
   top: 0;
@@ -617,16 +622,17 @@ form button {
   opacity: 0;
   box-shadow: 0 0 0 1px #fff;
   transition: all 0.2s ease-in-out;
+  pointer-events: none;
 }
-.social-media-list li:hover {
+.sosmed-list li:hover {
   background-color: #fff;
 }
-.social-media-list li:hover:after {
+.sosmed-list li:hover:after {
   opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
-.social-media-list li:hover a {
+.sosmed-list li:hover a {
   color: #000;
 }
 .copyright {
@@ -761,8 +767,8 @@ form button {
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
-.social-icons a.dribbble:hover {
-  background-color: #ea4c89;
+.social-icons a.github:hover {
+  background-color: #0f0f0f;
 }
 @media (max-width: 767px) {
   .social-icons li.title {
