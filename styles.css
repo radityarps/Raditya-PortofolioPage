@@ -54,7 +54,6 @@ header.sticky {
 }
 nav {
   display: flex;
-  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -74,8 +73,6 @@ nav a {
   padding-bottom: 5px;
   font-weight: 400;
   transition: all 0.5s ease;
-}
-nav ul li a {
   cursor: pointer;
 }
 .active {
@@ -582,10 +579,6 @@ form button {
   text-decoration: none;
 }
 /* Social Media Icons */
-
-a {
-  z-index: 99;
-}
 .sosmed-list {
   position: relative;
   font-size: 22px;
@@ -719,7 +712,6 @@ a {
   background-color: #33353d;
   font-size: 20px;
 }
-
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;
@@ -782,5 +774,35 @@ a {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    top: unset;
+    bottom: 10px;
+    height: 50px;
+    left: 15px;
+    right: 15px;
+    padding: 0 5px;
+    font-size: 20px;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+  }
+  header span {
+    display: none;
+  }
+  header.sticky {
+    top: unset;
+    bottom: 10px;
+    height: 50px;
+    left: 15px;
+    right: 15px;
+  }
+  nav {
+    padding: 0;
   }
 }
