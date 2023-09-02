@@ -11,7 +11,7 @@ let navLinks = document.querySelectorAll("header nav a");
 window.onscroll = () => {
   sec.forEach((section) => {
     let top = window.scrollY;
-    let offset = section.offsetTop;
+    let offset = section.offsetTop - 60;
     let height = section.offsetHeight;
     let id = section.getAttribute("id");
 
@@ -52,4 +52,12 @@ flkty.on("scroll", function () {
     var x = ((slide.target + flkty.x) * -1) / 3;
     image.style.backgroundPosition = x + "px";
   });
+});
+
+//CONTACT
+document.querySelector("#contact-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  e.target.elements.name.value = "";
+  e.target.elements.email.value = "";
+  e.target.elements.message.value = "";
 });
