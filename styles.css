@@ -758,8 +758,15 @@ a {
   color: #fff;
   background-color: #29aafe;
 }
-.social-icons a.facebook:hover {
-  background-color: #3b5998;
+.social-icons a.instagram:hover {
+  background: linear-gradient(
+    130deg,
+    #2477b3,
+    #7c528f,
+    #f8334a,
+    #fcab10,
+    #ffe633
+  );
 }
 .social-icons a.twitter:hover {
   background-color: #00aced;
