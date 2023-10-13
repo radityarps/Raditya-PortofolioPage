@@ -961,4 +961,8 @@ form button {
   #about h3 {
     font-size: 2rem;
   }
+  .content {
+    top: unset;
+    bottom: -5px;
+  }
 }
