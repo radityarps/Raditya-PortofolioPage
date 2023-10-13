@@ -251,7 +251,6 @@ h1 span {
   border: 2px solid var(--fifth-color);
   border-radius: 20px;
   padding: 20px;
-  box-shadow: -8px 10px rgba(212, 212, 212, 0.2);
 }
 .skills h3 {
   font-size: 3.5rem;
@@ -955,5 +954,14 @@ form button {
   }
   .direct-contact-container {
     width: 320px;
+  }
+  #about h2 {
+    font-size: 2.5rem;
+  }
+  #about h3 {
+    font-size: 2rem;
+  }
+  #skills {
+    box-shadow: none;
   }
 }
